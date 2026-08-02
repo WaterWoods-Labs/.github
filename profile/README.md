@@ -1,16 +1,33 @@
 # WaterWoods Labs
 
-WaterWoods Labs maintains a focused Freqtrade fork with native XCoin support.
+WaterWoods Labs maintains product-specific Freqtrade integrations. XCoin and Binance Portfolio
+Margin are independent products with separate source branches, release prefixes, and container
+images.
 
-## Public project
+## Products
 
-- [WaterWoods Freqtrade](https://github.com/WaterWoods-Labs/freqtrade) — XCoin spot and USDT perpetual futures integration.
-- [Latest XCoin release](https://github.com/WaterWoods-Labs/freqtrade/releases/latest) — use the published immutable image digest for deployment.
+| Product | Source | Releases | Image |
+| --- | --- | --- | --- |
+| XCoin spot and USDT perpetual futures | [`xcoin` branch](https://github.com/WaterWoods-Labs/freqtrade/tree/xcoin) | [`xcoin-*`](https://github.com/WaterWoods-Labs/freqtrade/releases?q=xcoin-) | `ghcr.io/waterwoods-labs/freqtrade-xcoin` |
+| Binance standard Portfolio Margin through PAPI | [`binance-portfolio-margin` branch](https://github.com/WaterWoods-Labs/freqtrade/tree/binance-portfolio-margin) | [`binance-portfolio-margin-*`](https://github.com/WaterWoods-Labs/freqtrade/releases?q=binance-portfolio-margin-) | `ghcr.io/waterwoods-labs/freqtrade-binance-portfolio-margin` |
+
+Use the published immutable `@sha256:<digest>` for deployment. Product images are not
+interchangeable.
 
 ## Support and security
 
-Report reproducible XCoin problems with the repository's [issue forms](https://github.com/WaterWoods-Labs/freqtrade/issues/new/choose). Questions that also reproduce on official Freqtrade belong in the [upstream project](https://github.com/freqtrade/freqtrade/issues).
+- Report reproducible XCoin problems with the repository's
+  [XCoin issue forms](https://github.com/WaterWoods-Labs/freqtrade/issues/new/choose).
+- Report Portfolio Margin problems through a
+  [Portfolio Margin bug form](https://github.com/WaterWoods-Labs/freqtrade/issues/new?template=binance_portfolio_margin_bug.yml)
+  and include the affected branch or release tag.
+- Problems that also reproduce on official Freqtrade belong in the
+  [upstream project](https://github.com/freqtrade/freqtrade/issues).
 
-Security vulnerabilities should be sent through [private vulnerability reporting](https://github.com/WaterWoods-Labs/freqtrade/security/advisories/new), never through a public issue.
+Security vulnerabilities must be sent through
+[private vulnerability reporting](https://github.com/WaterWoods-Labs/freqtrade/security/advisories/new),
+never through a public issue. Do not post API keys, API secrets, tokens, signatures, account data,
+private orders, or unredacted live logs.
 
-Trading software carries financial risk. Start with dry-run, review the release notes, and never place credentials in source control.
+Trading software carries financial risk. Start with dry-run, review the release notes, and never
+place credentials in source control.
