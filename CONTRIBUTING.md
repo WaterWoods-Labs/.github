@@ -5,7 +5,7 @@ documentation scope.
 
 ## Route the change
 
-- Target `xcoin` for XCoin adapter behavior, tests, documentation, CI, and releases.
+- Target `umx` for UMX adapter behavior, tests, documentation, CI, and releases.
 - Target `binance-portfolio-margin` for Binance Portfolio Margin/PAPI behavior, tests,
   documentation, CI, and releases.
 - Target this repository's `main` branch only for organization profile and default community
@@ -15,7 +15,7 @@ documentation scope.
 - Propose changes that apply unchanged to official Freqtrade to the
   [upstream project](https://github.com/freqtrade/freqtrade) first.
 
-Do not combine XCoin and Portfolio Margin implementation changes in one pull request. A shared
+Do not combine UMX and Portfolio Margin implementation changes in one pull request. A shared
 Freqtrade-core extension point must be justified and tested independently for each affected
 product.
 
@@ -26,6 +26,11 @@ product.
 3. Add or update tests and documentation in the same pull request.
 4. Run the repository's focused validation and any required full suite.
 5. State release, image, configuration, and migration impact.
+
+Ordinary changes use squash; product upstream integrations use merge commits to preserve upstream
+history, following the owning repository's rules. Authorization for an agreed task continues through
+routine fixes and validation after an interruption. Apply the repository's owner-approval policy and
+current GitHub branch rules before merging.
 
 Never commit API keys, API secrets, tokens, request signatures, account data, private orders,
 databases, runtime logs, downloaded market data, or live configuration. Examples must contain

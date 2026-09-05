@@ -12,11 +12,14 @@ container images must stay within the matching product boundary.
 
 | Product | Source branch | Release prefix | Container image | Support |
 | --- | --- | --- | --- | --- |
-| XCoin | [`xcoin`](https://github.com/WaterWoods-Labs/freqtrade/tree/xcoin) | [`xcoin-*`](https://github.com/WaterWoods-Labs/freqtrade/releases?q=xcoin-) | `ghcr.io/waterwoods-labs/freqtrade-xcoin` | [XCoin issue forms](https://github.com/WaterWoods-Labs/freqtrade/issues/new/choose) |
+| UMX | [`umx`](https://github.com/WaterWoods-Labs/freqtrade/tree/umx) | [`umx-*`](https://github.com/WaterWoods-Labs/freqtrade/releases?q=umx-) | `ghcr.io/waterwoods-labs/freqtrade-umx` | [UMX issue forms](https://github.com/WaterWoods-Labs/freqtrade/issues/new/choose) |
 | Binance Portfolio Margin | [`binance-portfolio-margin`](https://github.com/WaterWoods-Labs/freqtrade/tree/binance-portfolio-margin) | [`binance-portfolio-margin-*`](https://github.com/WaterWoods-Labs/freqtrade/releases?q=binance-portfolio-margin-) | `ghcr.io/waterwoods-labs/freqtrade-binance-portfolio-margin` | [Portfolio Margin bug form](https://github.com/WaterWoods-Labs/freqtrade/issues/new?template=binance_portfolio_margin_bug.yml) |
 
 Deploy published images by immutable digest, for example `IMAGE@sha256:<digest>`. Never substitute
 one product image for the other.
+
+UMX is the current name of the former XCoin integration. When citing historical XCoin releases,
+keep their original `xcoin-*` tags and `freqtrade-xcoin` image identifiers; route new changes to UMX.
 
 ## Repository contents
 

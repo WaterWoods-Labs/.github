@@ -4,7 +4,7 @@
 
 | Scope | Branch and releases | Support route |
 | --- | --- | --- |
-| XCoin integration | `xcoin`; tags prefixed `xcoin-` | [XCoin issue forms](https://github.com/WaterWoods-Labs/freqtrade/issues/new/choose) |
+| UMX integration | `umx`; tags prefixed `umx-` | [UMX issue forms](https://github.com/WaterWoods-Labs/freqtrade/issues/new/choose) |
 | Binance Portfolio Margin/PAPI | `binance-portfolio-margin`; tags prefixed `binance-portfolio-margin-` | [Portfolio Margin bug form](https://github.com/WaterWoods-Labs/freqtrade/issues/new?template=binance_portfolio_margin_bug.yml) |
 | Behavior that reproduces on official Freqtrade | Official upstream branches and releases | [Freqtrade issue tracker](https://github.com/freqtrade/freqtrade/issues) |
 
@@ -15,7 +15,7 @@ For a WaterWoods product issue, include the product name, exact release tag or c
 live mode, operating system, and a minimal reproduction. Use an immutable image digest when a
 container is involved:
 
-- XCoin: `ghcr.io/waterwoods-labs/freqtrade-xcoin@sha256:<digest>`;
+- UMX: `ghcr.io/waterwoods-labs/freqtrade-umx@sha256:<digest>`;
 - Binance Portfolio Margin:
   `ghcr.io/waterwoods-labs/freqtrade-binance-portfolio-margin@sha256:<digest>`.
 

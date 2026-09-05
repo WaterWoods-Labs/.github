@@ -7,7 +7,7 @@ destination.
 
 Select one primary scope:
 
-- [ ] XCoin — target branch `xcoin`
+- [ ] UMX — target branch `umx`
 - [ ] Binance Portfolio Margin/PAPI — target branch `binance-portfolio-margin`
 - [ ] Organization profile or community health — target branch `main` in `.github`
 - [ ] Other repository-local maintenance
@@ -15,7 +15,7 @@ Select one primary scope:
 ## Verification
 
 - [ ] I started from the latest intended target branch.
-- [ ] The change does not mix XCoin and Portfolio Margin product behavior.
+- [ ] The change does not mix UMX and Portfolio Margin product behavior.
 - [ ] I ran the relevant focused tests or validation and listed the results below.
 - [ ] I updated documentation, examples, or migration guidance where required.
 - [ ] I reviewed release, container-image, configuration, and compatibility impact.
