@@ -29,3 +29,14 @@ keep their original `xcoin-*` tags and `freqtrade-xcoin` image identifiers; rout
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) defines contribution boundaries.
 - [`.github/PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md) is the organization
   fallback pull-request checklist.
+
+## Validation
+
+Pull requests and `main` updates run [community validation](.github/workflows/validate.yml): local
+Markdown link targets, YAML syntax, read-only workflow permissions, pinned action revisions, and
+high-confidence sensitive-file patterns. External URLs are reviewed separately; the check does
+not claim to verify their availability or to detect every possible secret.
+
+Run `python scripts/validate_repository.py` with `requirements-validation.txt` installed in the
+managed validation environment. Docker-only workstations run this in an ephemeral validation
+container. Product and research repositories retain their own checks and approval policies.
