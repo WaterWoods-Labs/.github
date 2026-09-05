@@ -16,6 +16,11 @@ UMX was formerly named XCoin. Historical releases retain their original names an
 Use the published immutable `@sha256:<digest>` for deployment. Product images are not
 interchangeable.
 
+Product maintenance: [UMX](https://github.com/WaterWoods-Labs/freqtrade/blob/umx/docs/umx-maintenance.md)
+and [Portfolio Margin](https://github.com/WaterWoods-Labs/freqtrade/blob/binance-portfolio-margin/docs/binance-portfolio-margin-maintenance.md).
+For contribution boundaries, see the
+[organization guide](https://github.com/WaterWoods-Labs/.github/blob/main/CONTRIBUTING.md).
+
 ## Support and security
 
 - Report reproducible UMX problems with the repository's
