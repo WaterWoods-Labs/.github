@@ -1,14 +1,16 @@
 # WaterWoods Labs
 
-WaterWoods Labs maintains product-specific Freqtrade integrations. XCoin and Binance Portfolio
+WaterWoods Labs maintains product-specific Freqtrade integrations. UMX and Binance Portfolio
 Margin are independent products with separate source branches, release prefixes, and container
 images.
+
+UMX was formerly named XCoin. Historical releases retain their original names and identifiers.
 
 ## Products
 
 | Product | Source | Releases | Image |
 | --- | --- | --- | --- |
-| XCoin spot and USDT perpetual futures | [`xcoin` branch](https://github.com/WaterWoods-Labs/freqtrade/tree/xcoin) | [`xcoin-*`](https://github.com/WaterWoods-Labs/freqtrade/releases?q=xcoin-) | `ghcr.io/waterwoods-labs/freqtrade-xcoin` |
+| UMX spot and USDT perpetual futures | [`umx` branch](https://github.com/WaterWoods-Labs/freqtrade/tree/umx) | [`umx-*`](https://github.com/WaterWoods-Labs/freqtrade/releases?q=umx-) | `ghcr.io/waterwoods-labs/freqtrade-umx` |
 | Binance standard Portfolio Margin through PAPI | [`binance-portfolio-margin` branch](https://github.com/WaterWoods-Labs/freqtrade/tree/binance-portfolio-margin) | [`binance-portfolio-margin-*`](https://github.com/WaterWoods-Labs/freqtrade/releases?q=binance-portfolio-margin-) | `ghcr.io/waterwoods-labs/freqtrade-binance-portfolio-margin` |
 
 Use the published immutable `@sha256:<digest>` for deployment. Product images are not
@@ -16,8 +18,8 @@ interchangeable.
 
 ## Support and security
 
-- Report reproducible XCoin problems with the repository's
-  [XCoin issue forms](https://github.com/WaterWoods-Labs/freqtrade/issues/new/choose).
+- Report reproducible UMX problems with the repository's
+  [UMX issue forms](https://github.com/WaterWoods-Labs/freqtrade/issues/new/choose).
 - Report Portfolio Margin problems through a
   [Portfolio Margin bug form](https://github.com/WaterWoods-Labs/freqtrade/issues/new?template=binance_portfolio_margin_bug.yml)
   and include the affected branch or release tag.

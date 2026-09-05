@@ -2,10 +2,10 @@
 
 ## Supported scope
 
-WaterWoods accepts vulnerability reports for the currently maintained XCoin and Binance Portfolio
+WaterWoods accepts vulnerability reports for the currently maintained UMX and Binance Portfolio
 Margin product branches and their published releases:
 
-- `xcoin` with release tags prefixed `xcoin-`;
+- `umx` with release tags prefixed `umx-`;
 - `binance-portfolio-margin` with release tags prefixed `binance-portfolio-margin-`.
 
 A problem that reproduces unchanged on official Freqtrade should follow the
