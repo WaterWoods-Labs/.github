@@ -6,18 +6,24 @@ images.
 
 UMX was formerly named XCoin. Historical releases retain their original names and identifiers.
 
-## Products
+## Choose a product
 
-| Product | Source | Releases | Image |
-| --- | --- | --- | --- |
-| UMX spot and USDT perpetual futures | [`umx` branch](https://github.com/WaterWoods-Labs/freqtrade/tree/umx) | [`umx-*`](https://github.com/WaterWoods-Labs/freqtrade/releases?q=umx-) | `ghcr.io/waterwoods-labs/freqtrade-umx` |
-| Binance standard Portfolio Margin through PAPI | [`binance-portfolio-margin` branch](https://github.com/WaterWoods-Labs/freqtrade/tree/binance-portfolio-margin) | [`binance-portfolio-margin-*`](https://github.com/WaterWoods-Labs/freqtrade/releases?q=binance-portfolio-margin-) | `ghcr.io/waterwoods-labs/freqtrade-binance-portfolio-margin` |
+| Entry | UMX | Binance Portfolio Margin (PAPI) |
+| --- | --- | --- |
+| Markets | Spot and USDT perpetual futures | Standard Portfolio Margin accounts trading USD-M perpetuals |
+| Source | [`umx`](https://github.com/WaterWoods-Labs/freqtrade/tree/umx) | [`binance-portfolio-margin`](https://github.com/WaterWoods-Labs/freqtrade/tree/binance-portfolio-margin) |
+| Adapter and configuration | [UMX guide](https://github.com/WaterWoods-Labs/freqtrade/blob/umx/docs/umx-adapter.md) | [PAPI guide](https://github.com/WaterWoods-Labs/freqtrade/blob/binance-portfolio-margin/docs/binance-portfolio-margin-adapter.md) |
+| Maintenance and contribution routing | [UMX maintenance](https://github.com/WaterWoods-Labs/freqtrade/blob/umx/docs/umx-maintenance.md) | [PAPI maintenance](https://github.com/WaterWoods-Labs/freqtrade/blob/binance-portfolio-margin/docs/binance-portfolio-margin-maintenance.md) |
+| Releases | [`umx-*`](https://github.com/WaterWoods-Labs/freqtrade/releases?q=umx-&expanded=true) | [`binance-portfolio-margin-*`](https://github.com/WaterWoods-Labs/freqtrade/releases?q=binance-portfolio-margin-&expanded=true) |
+| Image | `ghcr.io/waterwoods-labs/freqtrade-umx` | `ghcr.io/waterwoods-labs/freqtrade-binance-portfolio-margin` |
+
+The repository's default branch is `umx`. For PAPI, use the `binance-portfolio-margin` source
+link above and select that branch when cloning or opening a pull request. The `develop` and
+`stable` branches remain official Freqtrade mirrors.
 
 Use the published immutable `@sha256:<digest>` for deployment. Product images are not
 interchangeable.
 
-Product maintenance: [UMX](https://github.com/WaterWoods-Labs/freqtrade/blob/umx/docs/umx-maintenance.md)
-and [Portfolio Margin](https://github.com/WaterWoods-Labs/freqtrade/blob/binance-portfolio-margin/docs/binance-portfolio-margin-maintenance.md).
 For contribution boundaries, see the
 [organization guide](https://github.com/WaterWoods-Labs/.github/blob/main/CONTRIBUTING.md).
 
